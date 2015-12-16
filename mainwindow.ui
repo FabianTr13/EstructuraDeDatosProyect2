@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>962</width>
+    <height>653</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TouMaps</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resources/Resources.qrc">
+    <normaloff>:/icono.ico</normaloff>:/icono.ico</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>50</width>
+    <height>50</height>
+   </size>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="lbBLogo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>171</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Resources/Resources.qrc">:/icono.ico</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbBRosa">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>440</y>
+      <width>171</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Resources/Resources.qrc">:/RosaNautica.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbBWingets">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>141</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Resources/Resources.qrc">:/widgetsWeather.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMenu_1">
+    <property name="geometry">
+     <rect>
+      <x>453</x>
+      <y>-3</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/lbMenu1.png</normaloff>:/lbMenu1.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>1</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>1</number>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMenu_2">
+    <property name="geometry">
+     <rect>
+      <x>522</x>
+      <y>-3</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/lbMenu2.png</normaloff>:/lbMenu2.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>1</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>1</number>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMenu_3">
+    <property name="geometry">
+     <rect>
+      <x>594</x>
+      <y>-3</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/lbMenu3.png</normaloff>:/lbMenu3.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>1</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>1</number>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="gbMenu_1">
+    <property name="geometry">
+     <rect>
+      <x>456</x>
+      <y>0</y>
+      <width>281</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>1</width>
+      <height>1</height>
+     </size>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid gray;
+background-color: rgb(17, 80, 255);
+background-color: rgb(188, 188, 188);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>256</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbgDestinos">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>151</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Destinos Ingresados&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+     <property name="buddy">
+      <cstring></cstring>
+     </property>
+    </widget>
+    <zorder>lbgDestinos</zorder>
+    <zorder>listWidget</zorder>
+   </widget>
+   <widget class="QLabel" name="lbMapaBasel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>911</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Resources/Resources.qrc">:/MapaBase.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="gbMapaBase">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>220</y>
+      <width>911</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="gbMenu_2">
+    <property name="geometry">
+     <rect>
+      <x>456</x>
+      <y>0</y>
+      <width>281</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>1</width>
+      <height>1</height>
+     </size>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid gray;
+background-color: rgb(17, 80, 255);
+background-color: rgb(188, 188, 188);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <widget class="QComboBox" name="cbDestinosIni">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbDestinosFin">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lnPartida">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="text">
+      <string>Partida</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbDestino">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="text">
+      <string>Distino</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbDistancia">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>70</y>
+       <width>71</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="text">
+      <string>Distancia</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnRuta">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>130</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Resources/Resources.qrc">
+       <normaloff>:/btnDestio.png</normaloff>:/btnDestio.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spbDistancia">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>100</y>
+       <width>61</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lnM2Titulo">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>91</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="text">
+      <string>Crear Ruta</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gbMenu_3">
+    <property name="geometry">
+     <rect>
+      <x>456</x>
+      <y>0</y>
+      <width>281</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>1</width>
+      <height>1</height>
+     </size>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid gray;
+background-color: rgb(17, 80, 255);
+background-color: rgb(188, 188, 188);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="lnM3Titulo">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>151</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string>Buscar Ruta</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+     <property name="buddy">
+      <cstring></cstring>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbM3DestinoIni">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>91</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbM3DestinoFin">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>90</y>
+       <width>91</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbM3PuntosRecorridos">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>130</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;
+background-color: rgba(255, 255, 255, 4);</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhMultiLine</set>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+     <property name="buddy">
+      <cstring></cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbM3Destino">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>70</y>
+       <width>61</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string>Destino</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+     <property name="buddy">
+      <cstring></cstring>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnBuscarRuta">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>80</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Resources/Resources.qrc">
+       <normaloff>:/crearRuta.png</normaloff>:/crearRuta.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbMenuRuta">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>130</y>
+       <width>281</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="Resources/Resources.qrc">:/MenuRutaCorta.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbM3Millas">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>130</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;
+background-color: rgba(255, 255, 255, 4);</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhMultiLine</set>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+     <property name="buddy">
+      <cstring></cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbM3Caminando">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>160</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;
+background-color: rgba(255, 255, 255, 4);</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhMultiLine</set>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+     <property name="buddy">
+      <cstring></cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbM3EnAuto">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>160</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;
+background-color: rgba(255, 255, 255, 4);</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhMultiLine</set>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+     <property name="buddy">
+      <cstring></cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbM3PartidaRuta">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>61</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string>Partida</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+     <property name="buddy">
+      <cstring></cstring>
+     </property>
+    </widget>
+    <zorder>lnM3Titulo</zorder>
+    <zorder>cbM3DestinoIni</zorder>
+    <zorder>cbM3DestinoFin</zorder>
+    <zorder>lbM3Destino</zorder>
+    <zorder>btnBuscarRuta</zorder>
+    <zorder>lbMenuRuta</zorder>
+    <zorder>lbM3PuntosRecorridos</zorder>
+    <zorder>lbM3Millas</zorder>
+    <zorder>lbM3Caminando</zorder>
+    <zorder>lbM3EnAuto</zorder>
+    <zorder>lbM3PartidaRuta</zorder>
+   </widget>
+   <widget class="QPushButton" name="btnMenu_4">
+    <property name="geometry">
+     <rect>
+      <x>658</x>
+      <y>-3</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/lbMenu5.png</normaloff>:/lbMenu5.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>1</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>1</number>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="gbMenu_4">
+    <property name="geometry">
+     <rect>
+      <x>456</x>
+      <y>0</y>
+      <width>281</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>1</width>
+      <height>1</height>
+     </size>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid gray;
+background-color: rgb(17, 80, 255);
+background-color: rgb(188, 188, 188);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="lnM3Titulo_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>241</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px ;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Para agregar un nodo haga click&lt;/p&gt;&lt;p&gt;en la posicion deseada.&lt;/p&gt;&lt;p&gt;*Para Eliminarlo haga click derecho &lt;/p&gt;&lt;p&gt;sobre el punto.&lt;/p&gt;&lt;p&gt;*Para crear las arista u rutas dirigirse&lt;/p&gt;&lt;p&gt;a la opcion en el panel superior&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+     <property name="buddy">
+      <cstring></cstring>
+     </property>
+    </widget>
+   </widget>
+   <zorder>gbMenu_4</zorder>
+   <zorder>gbMenu_2</zorder>
+   <zorder>gbMenu_1</zorder>
+   <zorder>gbMenu_3</zorder>
+   <zorder>lbBLogo</zorder>
+   <zorder>lbBRosa</zorder>
+   <zorder>lbBWingets</zorder>
+   <zorder>btnMenu_1</zorder>
+   <zorder>btnMenu_2</zorder>
+   <zorder>btnMenu_3</zorder>
+   <zorder>lbMapaBasel</zorder>
+   <zorder>gbMapaBase</zorder>
+   <zorder>btnMenu_4</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>962</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

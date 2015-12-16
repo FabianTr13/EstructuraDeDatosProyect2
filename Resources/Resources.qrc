@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>btnDestio.png</file>
+        <file>crearRuta.png</file>
+        <file>fond.png</file>
+        <file>icono.ico</file>
+        <file>icono.png</file>
+        <file>lbMenu1.png</file>
+        <file>lbMenu2.png</file>
+        <file>lbMenu3.png</file>
+        <file>lbMenu4.png</file>
+        <file>lbMenu5.png</file>
+        <file>lbRuta1.png</file>
+        <file>lbRuta2.png</file>
+        <file>lbRuta3.png</file>
+        <file>lbRuta4.png</file>
+        <file>MapaBase.png</file>
+        <file>NodoMapa.png</file>
+        <file>NodoRuta.png</file>
+        <file>Resources.qrc</file>
+        <file>RosaNautica.png</file>
+        <file>widgetsWeather.png</file>
+        <file>MenuRutaCorta.png</file>
+    </qresource>
+</RCC>
