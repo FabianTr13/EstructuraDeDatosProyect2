@@ -21,5 +21,6 @@
         <file>RosaNautica.png</file>
         <file>widgetsWeather.png</file>
         <file>MenuRutaCorta.png</file>
+        <file>wall.png</file>
     </qresource>
 </RCC>

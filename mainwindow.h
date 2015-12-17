@@ -18,17 +18,17 @@ public:
 private slots:
     void on_btnMenu_1_clicked();
 
-    void on_BackGround_clicked();
-
-    void on_btnMenu_6_clicked();
-
     void on_btnMenu_2_clicked();
 
     void on_btnMenu_3_clicked();
 
     void on_btnMenu_4_clicked();
 
-    void on_pushButton_clicked();
+
+
+    void on_groupBox_clicked();
+
+    void on_btnMapeo_clicked();
 
 private:
     Ui::MainWindow *ui;
