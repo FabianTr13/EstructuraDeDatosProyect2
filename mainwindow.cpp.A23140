@@ -20,8 +20,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->gbMenu_3->setVisible(false);
     ui->gbMenu_4->setVisible(false);
     ui->gbMenu_5->setVisible(false);
-    ui->gbMenu_6->setVisible(false);
-
 }
 
 MainWindow::~MainWindow()
@@ -45,8 +43,7 @@ private:
     int g=0;
     int run=0;
 public:
-    QString ways="",wayc;
-
+    QString ways="";
     Dijkstra(int home,int endf){
         this->home=home;
         this->fin=endf;
@@ -157,7 +154,6 @@ int printPath(int node){
         printPath(predecessor[node]);
             ways = ways + num(node+1) + "..";
     }
-
 return node+1;
 }
 
@@ -174,9 +170,9 @@ int output()
            g =  printPath(i);
             if(g==fin){
                 run=distance[i];
-                wayc=ways;
             }else{
                 ways="";
+                run =0;
             }
 
     }
@@ -345,114 +341,6 @@ public:
         return 0;
     }
 
-    void eliminarNo(char noDel)
-    {
-        char var;
-        Tno aux,ant;
-        aux=p;
-        if(p==NULL)
-        {
-            QMessageBox messageBox;
-            messageBox.critical(0,"Error","Grafo vacio");
-            return;
-        }
-        var=noDel;
-
-        while(aux!=NULL)
-        {
-            if(aux->nombre==var)
-            {
-                if(aux->ady!=NULL)
-                    vaciarArista(aux);
-
-                if(aux==p)
-                {
-
-                    p=p->sgte;
-                    //delete(aux);
-                    QMessageBox messageBox;
-                    messageBox.information(0,"Eliminado","Nodo Borrado");
-                    return;
-
-
-
-                }
-                else
-                {
-                    ant->sgte = aux->sgte;
-                    //delete(aux);
-                    QMessageBox messageBox;
-                    messageBox.information(0,"Eliminado","Nodo Borrado");
-                    return;
-                }
-            }
-            else
-            {
-                ant=aux;
-                aux=aux->sgte;
-            }
-        }
-
-    }
-
-    void vaciarArista(Tno &aux)
-    {
-        Tarista q,r;
-        q=aux->ady;
-        while(q->sgte!=NULL)
-        {
-            r=q;
-            q=q->sgte;
-            delete(r);
-        }
-    }
-
-
-    void eliminarArista(char ori, char des)
-    {
-        char ini, fin;
-        Tno aux, aux2;
-        Tarista q,r;
-        ini=ori;
-        fin=des;
-        aux=p;
-        aux2=p;
-        while(aux2!=NULL)
-        {
-            if(aux2->nombre==fin)
-            {
-                break;
-            }
-            else
-                aux2=aux2->sgte;
-        }
-        while(aux!=NULL)
-        {
-            if(aux->nombre==ini)
-            {
-                q=aux->ady;
-                while(q!=NULL)
-                {
-                    if(q->destino==aux2)
-                    {
-                        if(q==aux->ady)
-                            aux->ady=aux->ady->sgte;
-                        else
-                            r->sgte=q->sgte;
-                        delete(q);
-                        QMessageBox messageBox;
-                        messageBox.information(0,"Eliminada" , "Arista Borrada");
-                        return;
-                    }
-                }
-                r=q;
-                q=q->sgte;
-            }
-            aux = aux->sgte;
-        }
-    }
-
-
     void dijkstra (int origen,int destino)
     {
         Dijkstra G(origen,destino);
@@ -497,20 +385,19 @@ public:
         G.read(contador,pesos);
       G.calculateDistance();
          distancia= G.output();
-         this->ways = G.wayc;
+         this->ways=G.ways;
     }
 
 };
 
-
 //-----------------------------------------------------------------------------------------------------
-//
 
 
-bool cambioMenus[6];
+bool cambioMenus[5];
 int destinos=0;
 int distancia=0;
 arista ar;
+
 
 void MainWindow::on_btnMenu_1_clicked()
 {
@@ -520,10 +407,9 @@ void MainWindow::on_btnMenu_1_clicked()
     ui->gbMenu_3->setVisible(false);
     ui->gbMenu_4->setVisible(false);
     ui->gbMenu_5->setVisible(false);
-    ui->gbMenu_6->setVisible(false);
     ui->gbMenu_1->setVisible(true);
     cambioMenus[0]=true;
-    cambioMenus[1]=cambioMenus[2]=cambioMenus[3]=cambioMenus[4]=cambioMenus[5]=false;
+    cambioMenus[1]=cambioMenus[2]=cambioMenus[3]=cambioMenus[4]=false;
     }else{
         ui->gbMenu_1->setVisible(false);
         cambioMenus[0]=false;
@@ -537,10 +423,9 @@ void MainWindow::on_btnMenu_2_clicked()
     ui->gbMenu_3->setVisible(false);
     ui->gbMenu_4->setVisible(false);
     ui->gbMenu_5->setVisible(false);
-    ui->gbMenu_6->setVisible(false);
     ui->gbMenu_2->setVisible(true);
     cambioMenus[1]=true;
-    cambioMenus[0]=cambioMenus[2]=cambioMenus[3]=cambioMenus[4]=cambioMenus[5]=false;
+    cambioMenus[0]=cambioMenus[2]=cambioMenus[3]=cambioMenus[4]=false;
     }else{
         ui->gbMenu_2->setVisible(false);
         cambioMenus[1]=false;
@@ -554,10 +439,9 @@ void MainWindow::on_btnMenu_3_clicked()
     ui->gbMenu_2->setVisible(false);
     ui->gbMenu_4->setVisible(false);
     ui->gbMenu_5->setVisible(false);
-    ui->gbMenu_6->setVisible(false);
     ui->gbMenu_3->setVisible(true);
     cambioMenus[2]=true;
-    cambioMenus[0]=cambioMenus[1]=cambioMenus[3]=cambioMenus[4]=cambioMenus[5]=false;
+    cambioMenus[0]=cambioMenus[1]=cambioMenus[3]=cambioMenus[4]=false;
     }else{
         ui->gbMenu_3->setVisible(false);
         cambioMenus[2]=false;
@@ -571,10 +455,9 @@ void MainWindow::on_btnMenu_4_clicked()
     ui->gbMenu_2->setVisible(false);
     ui->gbMenu_3->setVisible(false);
     ui->gbMenu_5->setVisible(false);
-    ui->gbMenu_6->setVisible(false);
     ui->gbMenu_4->setVisible(true);
     cambioMenus[3]=true;
-    cambioMenus[0]=cambioMenus[1]=cambioMenus[2]=cambioMenus[4]=cambioMenus[5]=false;
+    cambioMenus[0]=cambioMenus[1]=cambioMenus[2]=cambioMenus[4]=false;
     }else{
         ui->gbMenu_4->setVisible(false);
         cambioMenus[3]=false;
@@ -588,31 +471,12 @@ void MainWindow::on_btnMenu_5_clicked()
     ui->gbMenu_2->setVisible(false);
     ui->gbMenu_3->setVisible(false);
     ui->gbMenu_4->setVisible(false);
-    ui->gbMenu_6->setVisible(false);
     ui->gbMenu_5->setVisible(true);
     cambioMenus[4]=true;
-    cambioMenus[0]=cambioMenus[1]=cambioMenus[2]=cambioMenus[3]=cambioMenus[5]=false;
+    cambioMenus[0]=cambioMenus[1]=cambioMenus[2]=cambioMenus[3]=false;
     }else{
         ui->gbMenu_5->setVisible(false);
         cambioMenus[4]=false;
-    }
-}
-
-
-void MainWindow::on_btnMenu_6_clicked()
-{
-    if(cambioMenus[5]==false){
-    ui->gbMenu_1->setVisible(false);
-    ui->gbMenu_2->setVisible(false);
-    ui->gbMenu_3->setVisible(false);
-    ui->gbMenu_4->setVisible(false);
-    ui->gbMenu_5->setVisible(false);
-    ui->gbMenu_6->setVisible(true);
-    cambioMenus[5]=true;
-    cambioMenus[0]=cambioMenus[1]=cambioMenus[2]=cambioMenus[3]=cambioMenus[4]=false;
-    }else{
-        ui->gbMenu_6->setVisible(false);
-        cambioMenus[5]=false;
     }
 }
 
@@ -625,19 +489,16 @@ void MainWindow::on_btnMapeo_clicked()
         QString num = QString::number(++destinos);
         text2=text2.at(0).toLower();
         ar.insertarNodo(text2.data()->toLatin1());
-        text="'" + text2 + "'" + " " + num +"  "+ text;
+        text= num + "'" + text2 +"'"+ " " + text;
         ui->cbDestinosFin->addItem(text);
         ui->cbDestinosIni->addItem(text);
         ui->cbM3DestinoFin->addItem(text);
         ui->cbM3DestinoIni->addItem(text);
-        ui->cbDestinosIniDelAris->addItem(text);
-        ui->cbDestinosFinDelAris->addItem(text);
-        ui->cbDestinosDelNode->addItem(text);
         ui->listDestinos->addItem(text);
         QLabel *dis = new QLabel(num+" "+text2,this);
         QLabel *tmp =new QLabel("",this);
-        tmp->setGeometry(p.x()-11,p.y()-34,35,35);
-        dis->setGeometry(p.x()-11,p.y(),34,20);
+        tmp->setGeometry(p.x(),p.y(),35,35);
+        dis->setGeometry(p.x(),p.y()+30,30,20);
         QFont font = dis->font();
         font.setBold(true);
         dis->setFont(font);
@@ -645,8 +506,6 @@ void MainWindow::on_btnMapeo_clicked()
         tmp->setPixmap(pix.scaled(tmp->size(),Qt::KeepAspectRatio, Qt::SmoothTransformation));
         tmp->show();
         dis->show();
-
-
     }else{
         QMessageBox messageBox;
         messageBox.critical(0,"Error","Imposible crear ruta intente nuevamente");
@@ -663,19 +522,14 @@ void MainWindow::on_btnRuta_clicked()
    QString c1,c2;
    c1=ui->cbDestinosIni->currentText();
    c2=ui->cbDestinosFin->currentText();
-   if(c1 == "Eliminado" || c2 == "Eliminado"){
-       QMessageBox messageBox;
-       messageBox.critical(0,"Error", "Imposible crear ruta");
-   }else{
-       p = c1.at(1).toLatin1();
-       f = c2.at(1).toLatin1();
-       c1=c1.at(1);
-       c2=c2.at(1);
-       QString adRuta =c1 + "    ->     " + c2 + "      " + ui->spbDistancia->text() + "Millas";
-       peso = ui->spbDistancia->value();
-       ar.insertarArista(f,p,peso);
-       ui->listRutas->addItem(adRuta);
-       }
+   p = c1.at(2).toLatin1();
+   f = c2.at(2).toLatin1();
+   c1=c1.at(2);
+   c2=c2.at(2);
+   QString adRuta =c1 + "    ->     " + c2 + "      " + ui->spbDistancia->text() + "Millas";
+   peso = ui->spbDistancia->value();
+   ar.insertarArista(f,p,peso);
+   ui->listRutas->addItem(adRuta);
 }
 
 void MainWindow::on_btnBuscarRuta_clicked()
@@ -683,48 +537,20 @@ void MainWindow::on_btnBuscarRuta_clicked()
     int p, f;
     int walk, driver;
     QString walking, drive;
-    QString distancia;
+    QString distancia, camino;
     p=ui->cbM3DestinoIni->currentIndex()+1;
     f=ui->cbM3DestinoFin->currentIndex()+1;
     ar.dijkstra(p,f);
     distancia = distancia.number(ar.distancia);
-    ui->lbM3PuntosRecorridos->setText(ar.ways);
+    camino = ar.ways;
+    ui->lbM3PuntosRecorridos->setText(camino);
     ui->lbM3Millas->setText(distancia + " Millas");
-    driver = ar.distancia / 0.9;
-    walk = ar.distancia / 0.31;
-    walking = walking.number(walk);
+    walk = ar.distancia / 0.9;
+    walking = ar.distancia / 0.31;
+    drive = walking.number(walk);
     drive = drive.number(driver);
     ui->lbM3EnAuto->setText(drive + "Min");
     ui->lbM3Caminando->setText(walking + "Min");
 }
 
 
-
-
-void MainWindow::on_btnEliminarArista_clicked()
-{
-    char ini, fin;
-    ini=ui->cbDestinosIniDelAris->currentText().at(1).toLatin1();
-    fin=ui->cbDestinosFinDelAris->currentText().at(1).toLatin1();
-    ar.eliminarArista(ini,fin);
-
-}
-
-void MainWindow::on_btnEliminarNodo_clicked()
-{
-    int node;
-    char noDel;
-    noDel = ui->cbDestinosDelNode->currentText().at(1).toLatin1();
-    node = ui->cbDestinosDelNode->currentIndex();
-    ar.eliminarNo(noDel);
-    ui->cbDestinosFin->setItemText(node,"Eliminado");
-    ui->cbDestinosIni->setItemText(node,"Eliminado");
-    ui->cbM3DestinoFin->setItemText(node,"Eliminado");
-    ui->cbM3DestinoIni->setItemText(node,"Eliminado");
-    ui->cbDestinosIniDelAris->setItemText(node,"Eliminado");
-    ui->cbDestinosFinDelAris->setItemText(node,"Eliminado");
-    ui->cbDestinosDelNode->setItemText(node,"Eliminar");
-
-
-
-}

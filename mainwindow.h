@@ -30,8 +30,21 @@ private slots:
 
     void on_btnMapeo_clicked();
 
+    void on_btnRuta_clicked();
+
+    void on_btnBuscarRuta_clicked();
+
+    void on_btnMenu_5_clicked();
+
+    void on_btnMenu_6_clicked();
+
+    void on_btnEliminarArista_clicked();
+
+    void on_btnEliminarNodo_clicked();
+
 private:
     Ui::MainWindow *ui;
+
 };
 
 #endif // MAINWINDOW_H
